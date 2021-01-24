@@ -1,5 +1,6 @@
-var timestamp = Date.parse(new Date());
-var time = timestamp/1000 - 2020040900;
+
+var begindate= '2020/04/09 00:00:00';  //å¼€å§‹æ—¶é—´
+var time = Date.parse(new Date())/1000 - Date.parse(begindate)/1000;
 
 function timedCount()
 {
@@ -8,7 +9,7 @@ time = time + 1;
 t = setTimeout("timedCount()",1000);
 }
 
-/** Ã¿ÈýÎ»Êý×ÖÌí¼ÓÒ»¸ö¶ººÅ£¬·½±ãÔÄ¶Á **/
+/** Ã¿ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ **/
 
 function fmoney(s, n)   
 {   
